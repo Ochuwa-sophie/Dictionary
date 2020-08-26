@@ -12,7 +12,7 @@ namespace Dictionary
     	{
             var client = new HttpClient();
         	client.BaseAddress = new Uri("https://wordsapiv1.p.rapidapi.com");
-        	client.DefaultRequestHeaders.Add("X-Mashape-Key", "5440b3736bmshd71edb6b5891126p1644f2jsnda3c418bc085");
+        	client.DefaultRequestHeaders.Add("X-Mashape-Key", "YourKey");
  
         	var wordToDefine = "Bicycle";
  
@@ -42,5 +42,5 @@ namespace Dictionary
             	Console.WriteLine("An error occurred! Error Message: " + e.Message);
         	}
     	}
-    }
+    }Your
 }
