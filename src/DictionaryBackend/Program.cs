@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Threading.Tasks;
 using System.Net.Http;
-// using Newtonsoft.Json;
 using System.Text.Json;
+using System.Web.Http.Cors;
 
 namespace Dictionary
 {
@@ -10,6 +10,8 @@ namespace Dictionary
     {
         static async Task Main(string[] args)
     	{
+	// 		EnableCorsAttribute cors = new EnableCorsAttribute("*", "*", "*");
+    // config.EnableCors(cors);
             var client = new HttpClient();
         	client.BaseAddress = new Uri("https://wordsapiv1.p.rapidapi.com");
         	client.DefaultRequestHeaders.Add("X-Mashape-Key", "YourKey");
@@ -42,5 +44,5 @@ namespace Dictionary
             	Console.WriteLine("An error occurred! Error Message: " + e.Message);
         	}
     	}
-    }Your
+    }
 }
