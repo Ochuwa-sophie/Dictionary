@@ -1,14 +1,11 @@
 using System.Collections.Generic;
-using System.Web.Http.Cors;
-// using Microsoft.AspNetCore.Cors;
-using System.Console;
+using Microsoft.AspNetCore.Cors;
 
 namespace Dictionary
 {
     
-
-     [EnableCors(origins: "http://mywebclient.azurewebsites.net", headers: "*", methods: "*")]
-    public class Result    {
+    public class Result    
+    {
         public string definition { get; set; } 
         public string partOfSpeech { get; set; } 
         public List<string> synonyms { get; set; }
